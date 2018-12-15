@@ -1,37 +1,80 @@
 <html>
     <head>
+        <meta charset="utf-8" />
         <link rel="stylesheet" href="homerepaso.css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     </head>
     <body>
-        <div id="header" class="flex-container">
-            <img src="img/logo.png" alt="Logo" class="logoheader"/> <!--Elimine el div que contenia la imagen pero no termino de entender por que-->
-            <div class="menu">
-                <div id="home" class="menu-item">Home</div>
-                <div id="quiensoy" class="menu-item">Quien soy</div>
-                <div id="servicios" class="menu-item">Servicios</div>
-                <div id="contacto" class="menu-item">Contacto</div>
+        <div class="contenedor">
+            <div id="header" class="flex-container">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo" class="logoheader"/> 
+                </div>
+                <div class="menu">
+                    <div id="home" class="menu-item">Home</div>
+                    <div id="quiensoy" class="menu-item">Quien soy</div>
+                    <div id="servicios" class="menu-item">Servicios</div>
+                    <div id="contacto" class="menu-item">Contacto</div>
+                </div>
             </div>
-        </div>
 
-        <div class="seccionmedio">
             <div class="imagenprincipal">
-                <img src="img/banner1.jpg" alt="banner" class="imagenmedio" />
-            </div>
-            <div class="quesomos">
-                <div class="logosomos">
-                    <img src="img/logo2.png">
+                    <img src="img/banner1.jpg" alt="banner" class="imagenmedio" />
+                </div>
+
+            <div class="seccionmedio">
+                <div class="quesomos">
+                    <div class="logosomos">
+                        <img src="img/logo2.png" class="logomedio">
+                    </div>
                 </div>
                 <div class="textosomos">
+                    <t>¿Que somos?</t>
                     <p>Somos un estudio creativo de diseño y desarrollo web, y comunicacion visual, centrados en la innovacion, la cercania con el cliente y la busqueda constante de nuevas ideas</p>
                 </div>
-                <div class="logossomos">
-                    <img src="img/linkedin.png" alt="linkedin" />
-                    <img src="img/github.png" alt="github" />
+                <div class="sinclase">
+                    <div class="redes"><img src="img/linkedin.png" alt="linkedin"  class="logoredes"/></div>
+                    <div class="redes"><img src="img/github.png" alt="github" class="logoredes" /></div>
                 </div>
 
+            </div>
+
+            <div class="nosotras">
+                <div class="persona"> 
+                    <div class="avatar"><img src="img/avatar.jpg" alt="avatar"/></div>
+                    <div class="descripcion">
+                        <div class="nombre"> Florencia </div>
+                        <div class="puesto"> Desarrolladora </div>
+                    </div>
+                </div>
+                <div class="persona"> 
+                    <div class="avatar"><img src="img/avatar.jpg" alt="avatar"/></div>
+                    <div class="descripcion">
+                        <div class="nombre"> Natalia </div>
+                        <div class="puesto"> Desarrolladora </div>
+                    </div>
+                </div>
+                <div class="persona"> 
+                    <div class="avatar"><img src="img/avatar.jpg" alt="avatar"/></div>
+                    <div class="descripcion">
+                        <div class="nombre"> Mariela </div>
+                        <div class="puesto"> Desarrolladora </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="contacto">
+                    <div class="sobre"><img src="img/sobre.svg" alt="sobre" class="sobrelogo"></div>
+                    <div class="email"> contacto@nafala.com </div>
+                </div>
+
+                <div class="sociales">
+                    <img src="img/face.png" alt="facebook" class="socialeslogo">
+                    <img src="img/insta.png" alt="instagram" class="socialeslogo">
+                    <img src="img/twitter.svg" alt="twitter" class="socialeslogo">
+                </div>
+            </div>
         </div>
-
-
     </body>
 </html>
