@@ -7,7 +7,7 @@ body {
 
 .flex-container {
     display: flex;
-    background-color: black;
+    background-color: rgb(63, 62, 62);
     color: #E44D26;
     width: 100%;
     height: 50px;
@@ -19,6 +19,10 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 20%
+}
+
+.hamburguesa{
+    display:none
 }
 
 .logo{
@@ -41,11 +45,11 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
-    padding: 30px 0 30px 0;
+    margin: 30px 0 30px 0;
 }
 
-.imagenmedio {
-    max-width: 800px
+.imagenprincipal img {
+    width: 800px
 }
 
 .seccionmedio{
@@ -130,7 +134,7 @@ t {
 
 .footer {
     display: flex;
-    background-color: black;
+    background-color: rgb(63, 62, 62);
     color: #E44D26;
     width: 100%;
     height: 50px;
@@ -152,12 +156,63 @@ t {
     align-items: center
 }
 
-/* esto lo hice para no ponerle una clase al body y asi estilarlo */
 
-.contenedor{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh; /* 100% de la pantalla visible */
-    width: 100%
+@media only screen  and (max-width: 480px) {
+
+    .hamburguesa {
+    display:block;
+    }
+
+    .hamburguesa img{
+        width: 50px;
+        height: auto;
+    }
+
+    .menu-item{
+     display: none
+        
+    }
+    
+    .imagenprincipal{
+        margin: 30px 0px 0px 0px 
+    }
+
+    .imagenprincipal img {
+        width: 100%;
+        height: auto;
+    }
+
+    .seccionmedio {
+        padding: 30px;
+    }
+
+    .sinclase {
+        display: none
+    }
+
+    .quesomos{
+        display: none
+    }
+
+    .nosotras{
+        display:flex;
+        flex-direction: column
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .sobrelogo, .socialeslogo{
+        height: 30%;
+        margin: 0px
+    }
+    
+    .contacto {
+        font-size: 6;
+    }
+    
 }
+
